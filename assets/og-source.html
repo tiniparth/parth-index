@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="fonts.css">
+<style>
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{
+    width:1200px; height:630px; overflow:hidden;
+    background:#2B45F0; color:#fff;
+    font-family:'Quicksand', sans-serif;
+    padding:64px 80px 0;
+    position:relative;
+  }
+  .top{ display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:48px; }
+  .tag{
+    display:inline-block; padding:10px 26px 11px; border-radius:999px;
+    background:#FFB421; color:#17120D; border:3px solid #17120D;
+    font-family:'Space Mono',monospace; font-weight:700; font-size:17px;
+    letter-spacing:.14em; text-transform:uppercase; transform:rotate(-2deg);
+    box-shadow:4px 4px 0 rgba(0,0,0,.35);
+  }
+  .script{
+    font-family:'Caveat',cursive; font-weight:600; font-size:44px; line-height:1.05;
+    color:#D9F24B; transform:rotate(-3deg); text-align:right;
+  }
+  .kicker{ font-family:'Space Mono',monospace; font-size:20px; letter-spacing:.06em; margin-bottom:14px; opacity:.92; }
+  h1{
+    font-family:'Baloo 2',sans-serif; font-weight:800; font-size:88px; line-height:1.0;
+    letter-spacing:-.01em; text-shadow:6px 6px 0 rgba(15,10,60,.35);
+  }
+  .circled{ position:relative; display:inline-block; }
+  .circled svg{ position:absolute; inset:-14% -6% -18% -7%; width:113%; height:136%; overflow:visible; pointer-events:none; }
+  .pills{ display:flex; gap:18px; margin-top:56px; }
+  .pill{
+    padding:12px 24px 13px; border-radius:18px;
+    border:3px solid #17120D; box-shadow:6px 6px 0 #17120D;
+    background:#FFF6E6; color:#17120D; font-weight:700; font-size:22px;
+  }
+  .rail{
+    position:absolute; left:80px; right:80px; bottom:34px;
+    display:flex; align-items:center; justify-content:space-between;
+    font-family:'Space Mono',monospace; font-size:15px; font-weight:700;
+    letter-spacing:.22em; text-transform:uppercase;
+    border-top:2px solid #fff; padding-top:18px;
+  }
+  .dots{ display:flex; gap:10px; }
+  .dots i{ width:9px; height:9px; border-radius:50%; background:#fff; opacity:.35; }
+  .dots i.on{ opacity:1; }
+</style>
+</head>
+<body>
+  <div class="top">
+    <span class="tag">1 builder &middot; the file</span>
+    <span class="script">no vibes,<br>just work.</span>
+  </div>
+  <p class="kicker">PARTH PARMAR. ON PAPER:</p>
+  <h1>&ldquo;Non&#8209;technical.&rdquo;<br>In practice: <span class="circled">ships anyway.<svg viewBox="0 0 300 90" preserveAspectRatio="none" aria-hidden="true"><path d="M20,45 C30,12 260,2 285,38 C300,62 240,86 130,84 C60,83 8,70 20,45" fill="none" stroke="#FF6B4A" stroke-width="6" stroke-linecap="round"/></svg></span></h1>
+  <div class="pills">
+    <span class="pill">product &amp; growth</span>
+    <span class="pill">founding team @ Workwise</span>
+    <span class="pill">Bengaluru</span>
+  </div>
+  <div class="rail"><span>The Parth Index</span><span class="dots"><i class="on"></i><i></i><i></i><i></i><i></i></span><span>Parth Parmar</span></div>
+</body>
+</html>
