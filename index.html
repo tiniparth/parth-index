@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parth Parmar — no vibes, just work.</title>
+<meta name="description" content="Non-technical builder. Founding member &amp; growth at an AI startup. Ships anyway.">
+<meta property="og:title" content="Parth Parmar — no vibes, just work.">
+<meta property="og:description" content="Non-technical builder. Founding member &amp; growth at an AI startup. Ships anyway.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗂️</text></svg>">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="p-index">
+
+<nav class="nav" aria-label="Site">
+  <a href="index.html" class="on" aria-current="page">Index</a>
+  <a href="work.html">Work</a>
+  <a href="builds.html">Builds</a>
+  <a href="lens.html">Lens</a>
+  <a href="rails.html">Rails</a>
+</nav>
+
+<main class="page">
+  <div class="inner">
+    <div class="rv in" style="display:flex; justify-content:space-between; align-items:flex-start; gap:16px; margin-bottom:64px;">
+      <span class="tag">1 builder &middot; the file</span>
+      <span class="script">no vibes,<br>just work.</span>
+    </div>
+
+    <p class="kicker rv in">PARTH PARMAR. ON PAPER:</p>
+    <h1 class="rv in">&ldquo;Non&#8209;technical.&rdquo;<br>In practice: <span class="circled">ships anyway.<svg viewBox="0 0 300 90" aria-hidden="true"><path d="M20,45 C30,12 260,2 285,38 C300,62 240,86 130,84 C60,83 8,70 20,45" fill="none" stroke="#FF6B4A" stroke-width="5" stroke-linecap="round"/></svg></span></h1>
+
+    <p class="rv in" style="color:var(--yellow); font-weight:700; font-size:19px; margin-top:34px; max-width:54ch;">Founding member &amp; growth at an AI startup. Builds real products with AI. Runs long distances on purpose.</p>
+    <p class="rv in" style="opacity:.85; font-size:16px; margin-top:8px;">Here&rsquo;s what the file actually says. &darr;</p>
+
+    <div class="pills rv" style="margin-top:52px;">
+      <span class="pill">first paid Gulf client: closed</span>
+      <span class="pill">personal AI assistant: shipped</span>
+      <span class="pill">investment memos: monthly</span>
+      <span class="pill">next race: Ladakh Half &rsquo;26</span>
+    </div>
+
+    <div class="routes">
+      <a class="route route-work rv" href="work.html">
+        <span class="rt-eyebrow">01 — The day job</span>
+        <span class="rt-title">AI + a boring B2B workflow.</span>
+        <span class="rt-line">0&rarr;1 growth for industrial procurement, Gulf + India.</span>
+        <span class="rt-go">&rarr; WORK</span>
+      </a>
+      <a class="route route-builds rv" href="builds.html">
+        <span class="rt-eyebrow">02 — What nobody posts</span>
+        <span class="rt-title">Most side projects die quietly.</span>
+        <span class="rt-line">Mine get a status — shipped, in build, or killed on purpose.</span>
+        <span class="rt-go">&rarr; BUILDS</span>
+      </a>
+      <a class="route route-lens rv" href="lens.html">
+        <span class="rt-eyebrow">03 — How I read markets</span>
+        <span class="rt-title">Unsexy industries, compounding data.</span>
+        <span class="rt-line">The thesis I hunt with — and the bar every memo must clear.</span>
+        <span class="rt-go">&rarr; LENS</span>
+      </a>
+      <a class="route route-rails rv" href="rails.html">
+        <span class="rt-eyebrow">04 — The operating system</span>
+        <span class="rt-title">My strategy, in one word: compounding.</span>
+        <span class="rt-line">Kilometres, pages, reps.</span>
+        <span class="rt-go">&rarr; RAILS</span>
+      </a>
+    </div>
+
+    <div class="yourmove rv">
+      <p class="mlabel">Your move</p>
+      <div class="cta">
+        <a class="hot" href="https://www.linkedin.com/in/parthparmar3112/">&rarr; LinkedIn</a>
+        <a href="mailto:tiniparth@gmail.com">&rarr; Email</a>
+        <a href="https://github.com/tiniparth">&rarr; GitHub</a>
+      </div>
+      <p class="datacredit">Data: lived experience &middot; n=1 &middot; compounding daily.</p>
+    </div>
+  </div>
+
+  <footer class="rail"><span>The Parth Index</span><span class="dots"><i class="on"></i><i></i><i></i><i></i><i></i></span><span>Parth Parmar</span></footer>
+</main>
+
+<script>
+  const io = new IntersectionObserver((es) => {
+    for (const e of es) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.rv:not(.in)').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

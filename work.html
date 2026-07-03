@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work — Parth Parmar</title>
+<meta name="description" content="Founding member &amp; growth at Workwise — AI-native procurement for EPC and industrial contractors, Gulf + India.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗂️</text></svg>">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="p-work">
+
+<nav class="nav" aria-label="Site">
+  <a href="index.html">Index</a>
+  <a href="work.html" class="on" aria-current="page">Work</a>
+  <a href="builds.html">Builds</a>
+  <a href="lens.html">Lens</a>
+  <a href="rails.html">Rails</a>
+</nav>
+
+<main class="page">
+  <div class="inner">
+    <p class="eyebrow rv in">01 — The day job</p>
+    <h1 class="rv in">AI + a <span class="hl hl-verm">boring</span> B2B workflow.</h1>
+    <p class="lede rv in" style="margin-top:30px;">That&rsquo;s not a trend I read about — it&rsquo;s my Monday. I&rsquo;m a founding member &amp; growth at <b>Workwise</b>: an AI&#8209;native procurement and execution platform for EPCs and industrial contractors, sold across the <b>Gulf and India</b>. Unsexy industry, broken tools, real money on the table.</p>
+    <div class="pills rv" style="margin-top:32px;">
+      <span class="pill">EPC procurement</span>
+      <span class="pill">Gulf + India</span>
+      <span class="pill">founding team</span>
+      <span class="pill">0&rarr;1 growth</span>
+    </div>
+    <p class="rv" style="margin-top:32px; text-align:right;"><span class="script">boring = gold.</span></p>
+
+    <div class="block rv">
+      <div class="panel">
+        <p class="mlabel">Case — first paid Gulf customer</p>
+        <p style="margin:0;">A UAE oil &amp; gas company handed us a vague requirements document. One week later they were clicking through a working prototype in their own formats — their RFQs, their POs, their letterhead. Discovery &rarr; PRD &rarr; prototype &rarr; demo &rarr; purchase order. <b>Workwise&rsquo;s first paid Gulf customer.</b></p>
+      </div>
+    </div>
+
+    <div class="block rv">
+      <p class="mlabel">The loop I run</p>
+      <div class="chain">
+        <span class="pill">qualify</span><span class="arrow">&rarr;</span>
+        <span class="pill">discovery</span><span class="arrow">&rarr;</span>
+        <span class="pill">spec</span><span class="arrow">&rarr;</span>
+        <span class="pill">prototype</span><span class="arrow">&rarr;</span>
+        <span class="pill">demo</span><span class="arrow">&rarr;</span>
+        <span class="pill">close</span>
+      </div>
+      <ol class="signals" style="margin-top:34px;">
+        <li><span class="n">1</span><span><b>Speed is the pitch.</b> A working prototype in a week beats a deck in a month.</span></li>
+        <li><span class="n">2</span><span><b>One golden thread, not twenty half&#8209;screens.</b> Prove the loop that touches money.</span></li>
+        <li><span class="n">3</span><span><b>Mirror the client&rsquo;s reality.</b> Their formats, their vocabulary, their workflow — translation is the job.</span></li>
+      </ol>
+    </div>
+
+    <div class="block rv">
+      <p class="mlabel">The ladder</p>
+      <ul class="ladder">
+        <li><span class="when">class 6</span><b>The family store, Jharkhand.</b> Billing, stock, ledgers, margins. First lesson in commerce, a decade before the word &ldquo;GTM.&rdquo;</li>
+        <li><span class="when">2019–23</span><b>B.Tech ECE + CS minor, BIT Mesra.</b> First Class Distinction.</li>
+        <li><span class="when">2023–25</span><b>Zoplar</b> (medical&#8209;supply commerce). Joined as an intern, became the company&rsquo;s <b>first product manager</b>. Product: shipped the website, internal products, the CRM build&#8209;out, and multiple other tools. Growth: owned a &#8377;35–50L marketing budget, replaced the agency, and took <b>ROAS from 5 to 25</b>.</li>
+        <li><span class="when">2025</span><b>aiqa health.</b> Project manager, growth &amp; marketing. Led a team of four.</li>
+        <li><span class="when">2025 — now</span><b>Workwise.</b> Founding member, product growth. See above.</li>
+      </ul>
+    </div>
+
+    <div class="yourmove rv">
+      <p class="mlabel">Your move</p>
+      <div class="cta">
+        <a class="hot" href="https://www.linkedin.com/in/parthparmar3112/">&rarr; LinkedIn</a>
+        <a href="mailto:tiniparth@gmail.com">&rarr; Email</a>
+        <a href="https://github.com/tiniparth">&rarr; GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="rail"><span>The Parth Index</span><span class="dots"><i></i><i class="on"></i><i></i><i></i><i></i></span><span>Parth Parmar</span></footer>
+</main>
+
+<script>
+  const io = new IntersectionObserver((es) => {
+    for (const e of es) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.rv:not(.in)').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

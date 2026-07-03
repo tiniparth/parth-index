@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lens — Parth Parmar</title>
+<meta name="description" content="How I read markets: AI-native systems of record for legacy, high-GMV industries.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗂️</text></svg>">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="p-lens">
+
+<nav class="nav" aria-label="Site">
+  <a href="index.html">Index</a>
+  <a href="work.html">Work</a>
+  <a href="builds.html">Builds</a>
+  <a href="lens.html" class="on" aria-current="page">Lens</a>
+  <a href="rails.html">Rails</a>
+</nav>
+
+<main class="page">
+  <div class="inner">
+    <p class="eyebrow rv in">03 — How I read markets</p>
+    <h1 class="rv in">Unsexy industries. Real workflows. <span class="hl hl-acid">Compounding data.</span></h1>
+    <p class="lede rv in" style="margin-top:30px;">The thesis I hunt with: <b>AI&#8209;native systems of record for legacy, high&#8209;GMV industries.</b> Software that ingests the messy real&#8209;world workflow — the Excel, the email, the WhatsApp — becomes the system of record, and compounds a data moat nobody can shortcut. I work inside one of these markets every day; the lens comes from the field, not a report.</p>
+
+    <div class="block rv">
+      <p class="mlabel">Hunting grounds</p>
+      <div class="pills">
+        <span class="pill">industrial &amp; EPC</span>
+        <span class="pill">old&#8209;economy vertical SaaS</span>
+        <span class="pill">vertical AI agents</span>
+        <span class="pill">Gulf + India digitization</span>
+        <span class="pill">attention &amp; digital wellness</span>
+      </div>
+      <p style="margin-top:14px; text-align:right;"><span class="script">the last one&rsquo;s<br>the range bet.</span></p>
+    </div>
+
+    <div class="block rv">
+      <p class="mlabel">What a memo must do</p>
+      <ol class="signals">
+        <li><span class="n">1</span><span>Verdict in the first five lines.</span></li>
+        <li><span class="n">2</span><span>Bottoms&#8209;up market math — no &ldquo;1% of a big number.&rdquo;</span></li>
+        <li><span class="n">3</span><span>A real anti&#8209;thesis, argued honestly.</span></li>
+        <li><span class="n">4</span><span>&ldquo;What would change my mind,&rdquo; written down.</span></li>
+        <li><span class="n">5</span><span>Self&#8209;score &ge; 7/10 — or it doesn&rsquo;t publish.</span></li>
+      </ol>
+    </div>
+
+    <div class="block rv">
+      <p class="mlabel">The memo shelf</p>
+      <div class="shelf">
+        <p class="big" style="margin:0;">Memo #001 ships July 2026.</p>
+        <p style="margin:8px 0 0; opacity:.85;">The shelf fills monthly.</p>
+      </div>
+      <p class="disclaimer">homework shared in public — not investment advice.</p>
+    </div>
+
+    <div class="yourmove rv">
+      <p class="mlabel">Your move</p>
+      <div class="cta">
+        <a class="hot" href="https://www.linkedin.com/in/parthparmar3112/">&rarr; LinkedIn</a>
+        <a href="mailto:tiniparth@gmail.com">&rarr; Email</a>
+        <a href="https://github.com/tiniparth">&rarr; GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="rail"><span>The Parth Index</span><span class="dots"><i></i><i></i><i></i><i class="on"></i><i></i></span><span>Parth Parmar</span></footer>
+</main>
+
+<script>
+  const io = new IntersectionObserver((es) => {
+    for (const e of es) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.rv:not(.in)').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

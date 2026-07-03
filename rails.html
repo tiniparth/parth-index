@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rails — Parth Parmar</title>
+<meta name="description" content="The operating system: running, reading, yoga, journalling — compounding daily.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗂️</text></svg>">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="p-rails">
+
+<nav class="nav" aria-label="Site">
+  <a href="index.html">Index</a>
+  <a href="work.html">Work</a>
+  <a href="builds.html">Builds</a>
+  <a href="lens.html">Lens</a>
+  <a href="rails.html" class="on" aria-current="page">Rails</a>
+</nav>
+
+<main class="page">
+  <div class="inner">
+    <p class="eyebrow rv in">04 — The operating system</p>
+    <p class="rv in" style="font-size:20px; font-weight:700; margin:0 0 6px;">My strategy, in one word:</p>
+    <h1 class="rv in" style="font-size:clamp(48px,10vw,80px);">COMPOUNDING.</h1>
+    <p class="lede rv in" style="margin-top:26px;">Long&#8209;distance running taught me the only growth model I trust: show up, log the kilometres, let the curve bend. Same rule for products, clients, and skills.</p>
+
+    <div class="block rv">
+      <p class="mlabel">The race log</p>
+      <div class="races">
+        <div class="race">
+          <div class="race-top"><span class="rname">Vedanta 10K, Delhi — first start line</span><span class="rtime">DEC 2024 &middot; 10 KM</span></div>
+          <div class="rbar"><b style="width:47%;"></b></div>
+        </div>
+        <div class="race">
+          <div class="race-top"><span class="rname">Vedanta Delhi Half Marathon</span><span class="rtime">OCT 2025 &middot; 21.1 KM &middot; 2:20:09</span></div>
+          <div class="rbar"><b style="width:100%;"></b></div>
+        </div>
+        <div class="race future">
+          <div class="race-top"><span class="rname">Ladakh Half Marathon — registered</span><span class="rtime">SEP 2026 &middot; 21.1 KM</span></div>
+          <div class="rbar"><b style="width:100%;"></b></div>
+          <p class="rnote">3,500 m of thin air, on purpose.</p>
+        </div>
+      </div>
+      <p class="horizon rv">Somewhere past all of this: an Ironman.</p>
+    </div>
+
+    <div class="block rv">
+      <p class="mlabel">Built on habit rails</p>
+      <div class="pills">
+        <span class="pill">running</span>
+        <span class="pill">reading</span>
+        <span class="pill">yoga</span>
+        <span class="pill">journalling</span>
+      </div>
+      <p style="margin-top:16px;">Tracked daily — by <a href="builds.html" style="color:var(--ink); font-weight:700;">a bot I built</a>.</p>
+    </div>
+
+    <div class="block rv">
+      <p class="mlabel">Where the rails started</p>
+      <p style="max-width:60ch; margin:0;">College taught me to organize people before I organized products: led the Entrepreneurship Development Cell at BIT Mesra (ran an entrepreneurship day for 150+ school students in Deoghar), co&#8209;founded <b>Ulgulan</b> — a student&#8209;funded group supporting tribal communities through COVID — served 3,000+ meals with Robin Hood Army, and taught 30+ tribal students when schools went dark.</p>
+    </div>
+
+    <p class="rv" style="margin-top:44px; text-align:right;"><span class="script">slow is smooth.</span></p>
+
+    <div class="yourmove rv">
+      <p class="mlabel">Your move</p>
+      <div class="cta">
+        <a class="hot" href="https://www.linkedin.com/in/parthparmar3112/">&rarr; LinkedIn</a>
+        <a href="mailto:tiniparth@gmail.com">&rarr; Email</a>
+        <a href="https://github.com/tiniparth">&rarr; GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="rail"><span>The Parth Index</span><span class="dots"><i></i><i></i><i></i><i></i><i class="on"></i></span><span>Parth Parmar</span></footer>
+</main>
+
+<script>
+  const io = new IntersectionObserver((es) => {
+    for (const e of es) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.rv:not(.in)').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
