@@ -5,9 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Builds — Parth Parmar</title>
 <meta name="description" content="Shipped, in build, and killed on purpose — the honest project ledger.">
+<meta property="og:title" content="Builds — Parth Parmar">
+<meta property="og:description" content="Shipped, in build, and killed on purpose — the honest project ledger.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗂️</text></svg>">
 <link rel="stylesheet" href="assets/fonts.css">
 <link rel="stylesheet" href="assets/style.css">
+<noscript><style>.rv{opacity:1;transform:none}</style></noscript>
 </head>
 <body class="p-builds">
 
@@ -23,37 +26,37 @@
   <div class="inner">
     <p class="eyebrow rv in">02 — What nobody posts</p>
     <h1 class="rv in">Most side projects die quietly.</h1>
-    <p class="rv in" style="color:var(--yellow); font-weight:700; font-size:19px; margin-top:14px;">Mine get a status — and a decision.</p>
+    <p class="rv in standfirst">Mine get a status — and a decision.</p>
 
     <div class="rows">
       <div class="row live rv">
         <div class="row-top"><span class="name">Parth OS</span><span class="status">&#9679; shipped &amp; live</span></div>
-        <div class="bar"><b></b></div>
+        <div class="bar" role="img" aria-label="Status: shipped and live"><b style="width:88%;"></b></div>
         <p class="note">A personal AI chief&#8209;of&#8209;staff: a Telegram bot (text + voice) and a dashboard sharing one persistent memory — tasks, notes, facts, expenses, habits, a 7&nbsp;a.m. briefing. MVP shipped in a day, compounding since.</p>
         <p class="meta">next.js &middot; supabase &middot; groq &middot; whisper &rarr; <a href="https://github.com/tiniparth/parthOS">github.com/tiniparth/parthOS</a></p>
       </div>
 
       <div class="row build rv">
         <div class="row-top"><span class="name">Call&#8209;notes portal</span><span class="status">&#9679; in build</span></div>
-        <div class="bar"><b></b></div>
+        <div class="bar" role="img" aria-label="Status: in build"><b style="width:34%;"></b></div>
         <p class="note">Any&#8209;language call recording in &rarr; transcript, summary, and action items out, with a shareable link. Built for my team.</p>
       </div>
 
       <div class="row run rv">
         <div class="row-top"><span class="name">The memo practice</span><span class="status">&#9679; running monthly</span></div>
-        <div class="bar"><b></b></div>
+        <div class="bar" role="img" aria-label="Status: running monthly"><b style="width:62%;"></b></div>
         <p class="note">One decision&#8209;grade investment memo a month, in public. &rarr; <a href="lens.html" style="color:var(--yellow);">the LENS page</a>.</p>
       </div>
 
       <div class="row run rv">
         <div class="row-top"><span class="name">The practice reps</span><span class="status">&#9679; reps, logged</span></div>
-        <div class="bar"><b style="width:48%;"></b></div>
+        <div class="bar" role="img" aria-label="Status: reps logged"><b style="width:48%;"></b></div>
         <p class="note">Before anyone paid me to build: PM case studies (how Zomato could earn more text reviews) and guesstimates for fun — elevators in a 40&#8209;storey building, planes in the air right now, weddings in India per year. The muscle came from reps.</p>
       </div>
 
       <div class="row killed rv">
         <div class="row-top"><span class="name">A stack of prototypes</span><span class="status">&#9679; killed on purpose</span></div>
-        <div class="bar"><b></b></div>
+        <div class="bar" role="img" aria-label="Status: killed on purpose"><b style="width:14%;"></b></div>
         <p class="note">Ideas that didn&rsquo;t survive contact with a real user. Killed fast, lessons kept.</p>
       </div>
     </div>
@@ -61,7 +64,7 @@
     <p class="moral rv">Shipping beats planning. Killing beats drifting.</p>
 
     <div class="yourmove rv">
-      <p class="mlabel">Your move</p>
+      <h2 class="mlabel">Your move</h2>
       <div class="cta">
         <a class="hot" href="https://www.linkedin.com/in/parthparmar3112/">&rarr; LinkedIn</a>
         <a href="mailto:tiniparth@gmail.com">&rarr; Email</a>
@@ -70,14 +73,9 @@
     </div>
   </div>
 
-  <footer class="rail"><span>The Parth Index</span><span class="dots"><i></i><i></i><i class="on"></i><i></i><i></i></span><span>Parth Parmar</span></footer>
+  <footer class="rail"><span>The Parth Index</span><span class="dots" aria-hidden="true"><i></i><i></i><i class="on"></i><i></i><i></i></span><span>Parth Parmar</span></footer>
 </main>
 
-<script>
-  const io = new IntersectionObserver((es) => {
-    for (const e of es) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-  }, { threshold: 0.15 });
-  document.querySelectorAll('.rv:not(.in)').forEach(el => io.observe(el));
-</script>
+<script src="assets/reveal.js" defer></script>
 </body>
 </html>

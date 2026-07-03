@@ -5,9 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rails — Parth Parmar</title>
 <meta name="description" content="The operating system: running, reading, yoga, journalling — compounding daily.">
+<meta property="og:title" content="Rails — Parth Parmar">
+<meta property="og:description" content="The operating system: running, reading, yoga, journalling — compounding daily.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗂️</text></svg>">
 <link rel="stylesheet" href="assets/fonts.css">
 <link rel="stylesheet" href="assets/style.css">
+<noscript><style>.rv{opacity:1;transform:none}</style></noscript>
 </head>
 <body class="p-rails">
 
@@ -23,11 +26,11 @@
   <div class="inner">
     <p class="eyebrow rv in">04 — The operating system</p>
     <p class="rv in" style="font-size:20px; font-weight:700; margin:0 0 6px;">My strategy, in one word:</p>
-    <h1 class="rv in" style="font-size:clamp(48px,10vw,80px);">COMPOUNDING.</h1>
+    <h1 class="rv in h1-xl">COMPOUNDING.</h1>
     <p class="lede rv in" style="margin-top:26px;">Long&#8209;distance running taught me the only growth model I trust: show up, log the kilometres, let the curve bend. Same rule for products, clients, and skills.</p>
 
     <div class="block rv">
-      <p class="mlabel">The race log</p>
+      <h2 class="mlabel">The race log</h2>
       <div class="races">
         <div class="race">
           <div class="race-top"><span class="rname">Aravalli Trail Run — first start line</span><span class="rtime">NOV 2024 &middot; TRAIL &middot; 2:45</span></div>
@@ -52,7 +55,7 @@
     </div>
 
     <div class="block rv">
-      <p class="mlabel">Built on habit rails</p>
+      <h2 class="mlabel">Built on habit rails</h2>
       <div class="pills">
         <span class="pill">running</span>
         <span class="pill">reading</span>
@@ -63,14 +66,14 @@
     </div>
 
     <div class="block rv">
-      <p class="mlabel">Where the rails started</p>
+      <h2 class="mlabel">Where the rails started</h2>
       <p style="max-width:60ch; margin:0;">College taught me to organize people before I organized products: founding member and later Vice President of the Entrepreneurship Development Cell at BIT Mesra (ran an entrepreneurship day for 150+ school students in Deoghar), founded <b>Ulgulan</b> — a student&#8209;funded group that fought pandemic misinformation and helped tribal communities navigate COVID safely — served 3,000+ meals with Robin Hood Army, and taught 30+ tribal students when schools went dark.</p>
     </div>
 
     <p class="rv" style="margin-top:44px; text-align:right;"><span class="script">slow is smooth.</span></p>
 
     <div class="yourmove rv">
-      <p class="mlabel">Your move</p>
+      <h2 class="mlabel">Your move</h2>
       <div class="cta">
         <a class="hot" href="https://www.linkedin.com/in/parthparmar3112/">&rarr; LinkedIn</a>
         <a href="mailto:tiniparth@gmail.com">&rarr; Email</a>
@@ -79,14 +82,9 @@
     </div>
   </div>
 
-  <footer class="rail"><span>The Parth Index</span><span class="dots"><i></i><i></i><i></i><i></i><i class="on"></i></span><span>Parth Parmar</span></footer>
+  <footer class="rail"><span>The Parth Index</span><span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i class="on"></i></span><span>Parth Parmar</span></footer>
 </main>
 
-<script>
-  const io = new IntersectionObserver((es) => {
-    for (const e of es) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-  }, { threshold: 0.15 });
-  document.querySelectorAll('.rv:not(.in)').forEach(el => io.observe(el));
-</script>
+<script src="assets/reveal.js" defer></script>
 </body>
 </html>
