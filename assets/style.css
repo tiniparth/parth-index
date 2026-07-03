@@ -80,6 +80,11 @@ h2{ font-size:clamp(36px,7vw,54px); }
 
 .standfirst{ color:var(--yellow); font-weight:700; font-size:19px; margin-top:14px; max-width:54ch; }
 .h1-xl{ font-size:clamp(48px,10vw,80px); }
+.idstrip{
+  font-family:'Space Mono',monospace; font-weight:700; font-size:11.5px;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--cream);
+  margin-top:16px;
+}
 
 .lede{ font-size:18px; max-width:58ch; }
 .kicker{ font-family:'Space Mono',monospace; font-size:14px; letter-spacing:.06em; margin:0 0 18px; opacity:.92; }
