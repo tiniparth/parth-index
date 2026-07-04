@@ -193,6 +193,12 @@ h2.mlabel{ text-shadow:none; letter-spacing:.2em; line-height:1.4; }
 .xp-nums{ display:flex; flex-wrap:wrap; gap:10px; padding:2px; margin-top:4px; }
 .xp-nums .pill{ font-family:'Space Mono',monospace; font-size:12px; font-weight:700; padding:5px 12px 6px; box-shadow:3px 3px 0 var(--ink); }
 .xp-honest{ font-weight:700; color:var(--dred); }
+.p-builds .xp-dates, .p-builds .xp-more summary{ color:var(--damber); }
+.p-builds .xp-more summary:focus-visible{ outline-color:var(--damber); }
+.p-lens .xp-dates, .p-lens .xp-more summary{ color:var(--dviolet); }
+.p-lens .xp-more summary:focus-visible{ outline-color:var(--dviolet); }
+.row .xp-more{ margin-top:10px; }
+.row .xp-body{ font-size:15px; }
 
 /* ---------- ladder timeline ---------- */
 .ladder{ list-style:none; margin:24px 0 0; padding:0 0 0 4px; }
