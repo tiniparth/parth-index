@@ -160,6 +160,40 @@ h2.mlabel{ text-shadow:none; letter-spacing:.2em; line-height:1.4; }
 }
 .panel .mlabel{ color:var(--dred); }
 
+/* ---------- experience files (layered disclosure) ---------- */
+.xp{
+  margin-top:30px; padding:24px 26px;
+  border:2px solid var(--ink); border-radius:18px;
+  background:var(--paper); box-shadow:6px 6px 0 var(--ink);
+}
+.xp-head{ display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap; }
+.xp-title{ font-family:'Baloo 2',sans-serif; font-weight:800; font-size:21px; line-height:1.15; }
+.xp-role{ font-weight:700; font-size:15px; opacity:.85; display:block; margin-top:1px; }
+.xp-dates{
+  font-family:'Space Mono',monospace; font-weight:700; font-size:11px;
+  letter-spacing:.14em; text-transform:uppercase; white-space:nowrap; color:var(--dgreen);
+}
+.xp-hook{ margin:12px 0 0; font-size:16px; }
+.xp-more{ margin-top:14px; }
+.xp-more summary{
+  cursor:pointer; display:inline-flex; align-items:center; gap:8px;
+  font-family:'Space Mono',monospace; font-weight:700; font-size:11.5px;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--dgreen);
+  list-style:none; user-select:none;
+}
+.xp-more summary::-webkit-details-marker{ display:none; }
+.xp-more summary::before{ content:"+"; font-size:16px; line-height:1; }
+.xp-more[open] summary::before{ content:"–"; }
+.xp-more summary:hover{ text-decoration:underline; text-underline-offset:3px; }
+.xp-more summary:focus-visible{ outline:3px solid var(--dgreen); outline-offset:3px; border-radius:4px; }
+.xp-body{ margin-top:16px; display:flex; flex-direction:column; gap:12px; font-size:15.5px; }
+.xp-body p{ margin:0; }
+.xp-body ul{ margin:0; padding-left:18px; display:flex; flex-direction:column; gap:9px; }
+.xp-body b{ font-weight:700; }
+.xp-nums{ display:flex; flex-wrap:wrap; gap:10px; padding:2px; margin-top:4px; }
+.xp-nums .pill{ font-family:'Space Mono',monospace; font-size:12px; font-weight:700; padding:5px 12px 6px; box-shadow:3px 3px 0 var(--ink); }
+.xp-honest{ font-weight:700; color:var(--dred); }
+
 /* ---------- ladder timeline ---------- */
 .ladder{ list-style:none; margin:24px 0 0; padding:0 0 0 4px; }
 .ladder li{
