@@ -135,7 +135,7 @@ h2.mlabel{ text-shadow:none; letter-spacing:.2em; line-height:1.4; }
 .pills{ display:flex; flex-wrap:wrap; gap:14px 12px; padding:2px; }
 
 .circled{ position:relative; display:inline-block; }
-.circled svg{ position:absolute; inset:-16% -7% -20% -8%; width:115%; height:140%; overflow:visible; pointer-events:none; }
+.circled svg{ position:absolute; top:-26%; left:-10%; width:120%; height:148%; overflow:visible; pointer-events:none; z-index:-1; }
 
 /* pill-chain (the loop) */
 .chain{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; padding:2px; }
